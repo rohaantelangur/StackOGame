@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>StackO Game</title>
+  </head>
+  <body>
+    <div class="Maindiv">
+      <div class="Centerdiv">
+        <div class="Header">
+          <div id="scores">0</div>
+          <div id="timer">0</div>
+          <div class="tilesleft">
+            <p id="tilesCount"></p>
+            <p>Tiles Left</p>
+          </div>
+        </div>
+
+        <div class="tiles" id="tiles"></div>
+
+        <div class="worddiv">
+          <div class="remove" id="remove" onclick="removeLastCharactor()">
+            <i class="fa fa-trash"></i>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+
+          <div class="word">
+            <p id="ShowWord"></p>
+          </div>
+
+          <div class="right" id="right" onclick="finishGame()">
+            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>Tap on the word to remove the last letter</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
